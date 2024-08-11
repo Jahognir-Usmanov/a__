@@ -19,8 +19,9 @@ header .block_1 {
     justify-content: center;
     margin-bottom: 20px;
     padding: 20px;
-    color: #FFFF;
+    color: #fcd730;
     font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
@@ -47,6 +48,7 @@ header .block_2 nav {
 header .block_2 nav a {
     color: #FFFF;
     font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     padding: 10px 20px;
     text-decoration: none;
@@ -60,7 +62,6 @@ header .block_2 nav a:hover {
     text-decoration-line: underline;
 }
 
-/* Медиазапросы для адаптации под разные устройства */
 @media (max-width: 768px) {
     header .block_1 {
         font-size: 20px;
@@ -89,13 +90,13 @@ header .block_2 nav a:hover {
 }
 
 
-/* Общие стили */
 form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     font-size: 1rem;
-    color: #FFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: #FFFF; */
 }
 
 form input[type="text"],
@@ -113,9 +114,10 @@ form textarea {
 }
 
 form button[type="submit"] {
-    display: inline-block;
+    display: block;
+    margin-top: 20px;
     background-color: #007bff;
-    color: white;
+    /* color: white; */
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -134,17 +136,16 @@ form button[type="submit"]:focus {
     outline: none;
 }
 
-/* Стили для textarea */
+
 form textarea {
     height: 150px;
     resize: vertical;
 }
 
-/* Адаптивные стили */
 @media (min-width: 600px) {
     form {
         max-width: 600px;
-        margin: 0 auto; /* Центрируем форму на экране */
+        margin: 0 auto;
     }
 
     form button[type="submit"] {
@@ -185,12 +186,32 @@ form textarea {
     }
 }
 
-/* Стили для общего фона формы */
 .form {
     margin-top: -100px;
-    background-color: rgb(22, 5, 109);
-    padding: 20px; /* Добавлено для удобства чтения */
+    /* background-color: #082d77; */
+    padding: 20px;
     /* border-radius: 8px; */
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+option:checked {
+    background-color: #e0e0e0;
+    color: #000;
 }
 
 
@@ -209,6 +230,7 @@ ul {
     /* margin-top: 100px; */
 	background-color: black;
     padding: 70px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .footer_col {
    width: 25%;
@@ -283,4 +305,39 @@ ul {
   .footer_col{
     width: 100%;
 }
+}
+
+.screen_2 {
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+.screen_2 h2 {
+    font-size: clamp(28px, 4vw, 48px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.screen_2_span {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 767px) {
+
+    .screen_2_span {
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .screen_2_span {
+        margin-top: 75px;
+        font-size: 1.75rem;
+    }
 }
