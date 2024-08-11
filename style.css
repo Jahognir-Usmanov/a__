@@ -523,6 +523,7 @@ nav {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .faq-item {
@@ -541,7 +542,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s;
 }
 
@@ -554,7 +555,7 @@ nav {
     padding: 15px;
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
 }
 
@@ -579,6 +580,7 @@ nav {
     margin-top: -40px;
     margin-bottom: 20px;
     font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fcd730;
 }
 
@@ -590,12 +592,12 @@ nav {
     }
 
     .faq-question {
-        font-size: 14px;
+        font-size: 18px;
         padding: 10px;
     }
 
     .faq-answer {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .icon {
@@ -604,18 +606,18 @@ nav {
     }
 
     .faq h3 {
-        font-size: 20px;
+        font-size: 28px;
     }
 }
 
 @media (max-width: 480px) {
     .faq-question {
-        font-size: 12px;
+        font-size: 14px;
         padding: 8px;
     }
 
     .faq-answer {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .icon {
@@ -624,15 +626,16 @@ nav {
     }
 
     .faq h3 {
-        font-size: 18px;
+        font-size: 24px;
     }
 }
 
 .form h3 {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: -20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fcd730;
 }
