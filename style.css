@@ -513,3 +513,126 @@ nav {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 } */
+
+
+.faq-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #0056b3;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+.icon {
+    font-size: 18px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+.faq {
+    margin: 50px 0;
+}
+
+.faq h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fcd730;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .faq-container {
+        width: 95%;
+        max-width: none;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+    }
+
+    .icon {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+
+    .faq h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-question {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .faq-answer {
+        font-size: 11px;
+    }
+
+    .icon {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+
+    .faq h3 {
+        font-size: 18px;
+    }
+}
+
+.form h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: -20px;
+    font-size: 28px;
+    color: #fcd730;
+}
