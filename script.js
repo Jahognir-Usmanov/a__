@@ -21,3 +21,33 @@ function toggleAnswer(answerId, questionElement) {
         iconElement.style.transform = 'rotate(5deg)';
     }
 }
+
+
+document.addEventListener('scroll', function() {
+    const navPanel = document.getElementById('navPanel');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) {
+        navPanel.classList.add('show');
+    } else {
+        navPanel.classList.remove('show');
+        closeMenu();
+    }
+});
+
+document.getElementById('hamburgerButton').addEventListener('click', function() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.getElementById('hamburgerButton');
+
+    menu.classList.toggle('show');
+    hamburger.classList.toggle('active');
+});
+
+
+function closeMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.getElementById('hamburgerButton');
+
+    menu.classList.remove('show');
+    hamburger.classList.remove('active');
+}

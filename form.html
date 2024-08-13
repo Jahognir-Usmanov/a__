@@ -18,14 +18,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .form {
+    margin: 40px;
     background-color: #007bff;
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     max-width: 800px;
@@ -34,7 +35,6 @@
 
 h3 {
     text-align: center;
-    margin-bottom: 20px;
     font-size: 2rem;
     color: #fcd730;
     /* color: #FFFF; */
@@ -122,6 +122,11 @@ button i {
 
 /* Адаптивность для планшетов */
 @media (max-width: 768px) {
+    
+    /* h3 {
+    margin-top: 250px;
+    } */
+
     .form form {
         grid-template-columns: 1fr;
     }
@@ -129,6 +134,11 @@ button i {
     button {
         font-size: 1rem;
     }
+
+    .screen_form_a {
+    color: #FFFF;
+}
+
 }
 
 /* Адаптивность для ПК */
@@ -140,51 +150,26 @@ button i {
     button {
         font-size: 1.5rem;
     }
-
-    .breadcrumb {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .breadcrumb-item {
-    margin-right: 0.5rem;
-  }
-  
-  .breadcrumb-item + .breadcrumb-item::before {
-    content: '/';
-    margin-right: 0.8rem;
-  }
-  
-  .breadcrumb-item a {
-    color: #FFFF;
-  }
-
-  .breadcrumb-item a:hover {
-    color: #007bff;
-    text-decoration: underline;
-  }
-
-  .breadcrumb-item.active {
-    /* color: #6c757d; */
-    color: gray;
-  }
+    
 }
 
-@media (max-width: 480px) {
-    
+@media (max-width: 480px) {    
+
+    /* h3 {
+    margin-top: 200px;
+    } */
+
     .form {
        margin-top: 100px;
     }
 }
 
-a {
+.screen_form_a {
     margin-bottom: -100px;
     color: #FFFF;
 }
 
-a:hover {
+.screen_form_a :hover {
     color: #054488;
 }
     </style>
@@ -199,10 +184,11 @@ a:hover {
               </nav>
     
             </div> -->
-            <div><a href="index.html">Главная</a></div>
+            <div><a class="screen_form_a" href="index.html">Главная</a></div>
         <h3>FORM:</h3>
         
         <form>
+            
             <div class="input-group">
                 <label for="full-name"><i class="fas fa-user"></i> Full Name:</label>
                 <input type="text" id="full-name" name="Full Name" required pattern="[A-Za-z\s]{3,}">
