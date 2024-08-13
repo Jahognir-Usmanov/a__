@@ -11,7 +11,7 @@
     <style>
 
     body {
-    background: linear-gradient(135deg, #007bff, #00c6ff);
+    background-color: #007bff;
     color: rgb(239, 237, 237);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -127,7 +127,13 @@ button i {
     margin-top: 250px;
     } */
 
+    .form {
+       margin-top: -20px;
+    }
+
+    
     .form form {
+        margin: 0px;
         grid-template-columns: 1fr;
     }
 
@@ -143,6 +149,11 @@ button i {
 
 /* Адаптивность для ПК */
 @media (min-width: 1024px) {
+
+    .form {
+       margin-top: -20px;
+    }
+
     h3 {
         font-size: 2.5rem;
     }
@@ -153,6 +164,13 @@ button i {
     
 }
 
+@media (max-width: 1024px) {
+
+.form {
+   margin-top: -20px;
+}
+}
+
 @media (max-width: 480px) {    
 
     /* h3 {
@@ -160,7 +178,7 @@ button i {
     } */
 
     .form {
-       margin-top: 100px;
+       margin-top: -20px;
     }
 }
 
@@ -169,7 +187,7 @@ button i {
     color: #FFFF;
 }
 
-.screen_form_a :hover {
+.screen_form_a:hover {
     color: #054488;
 }
     </style>
@@ -184,8 +202,10 @@ button i {
               </nav>
     
             </div> -->
-            <div><a class="screen_form_a" href="index.html">Главная</a></div>
-        <h3>FORM:</h3>
+            <div><a class="screen_form_a" href="index.html">Home</a></div>
+          
+          
+        <h3>WUIT EDUCATION FORM:</h3>
         
         <form>
             
