@@ -2,222 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <style>
-
-* {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-}
-
-
-
-
-    body {
-
-    background-color: #007bff;
-    color: rgb(239, 237, 237);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-    /* height: 100vh; */
-}
-
-.form {
-    margin: 40px;
-    background-color: #007bff;
-    padding: 40px;
-    border-radius: 20px;
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    max-width: 800px;
-    width: 100%;
-}
-
-h3 {
-    text-align: center;
-    font-size: 2rem;
-    color: #fcd730;
-    /* color: #FFFF; */
-}
-
-h3:hover {
-
-}
-
-.form form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.input-group {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.input-group.full-width {
-    grid-column: 1 / -1;
-}
-
-.input-group label {
-    font-size: 1rem;
-    /* color: #fcd730; */
-    color: #FFFF;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.input-group input,
-.input-group textarea,
-.input-group select {
-    /* width: 100%; */
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.3);
-    border: 2px solid black;
-    border-radius: 10px;
-    /* color: #007bff; */
-    color: #fcd730;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    outline: none;
-}
-
-.input-group input:focus,
-.input-group textarea:focus,
-.input-group select:focus {
-    background-color: rgba(0, 123, 255, 0.2);
-    border-color: #FFFF;
-    transform: scale(1.02);
-}
-
-button {
-    grid-column: 1 / -1;
-    padding: 15px;
-    background-color: #FFFF;
-    border: none;
-    border-radius: 50px;
-    color: #007bff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-button:hover {
-    background-color: #007bff;
-    color: black;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-}
-
-button i {
-    margin-right: 10px;
-}
-
-/* Адаптивность для планшетов */
-@media (max-width: 768px) {
-    
-    /* h3 {
-    margin-top: 250px;
-    } */
-
-    .form {
-       margin-top: -20px;
-    }
-
-    
-    .form form {
-        margin: 0px;
-        grid-template-columns: 1fr;
-    }
-
-    button {
-        font-size: 1rem;
-    }
-
-    .screen_form_a {
-    color: #FFFF;
-}
-
-}
-
-/* Адаптивность для ПК */
-@media (min-width: 1024px) {
-
-    .form {
-       margin-top: -20px;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-    }
-
-    button {
-        font-size: 1.5rem;
-    }
-    
-}
-
-@media (max-width: 1024px) {
-
-.form {
-   margin-top: -20px;
-}
-}
-
-@media (max-width: 480px) {    
-
-    /* h3 {
-    margin-top: 200px;
-    } */
-
-    .form {
-       margin-top: -20px;
-    }
-}
-
-@media (max-width: 350px) {    
-    .form form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    input {
-        width: 250px;
-    }
-}
-
-.screen_form_a {
-    margin-bottom: -100px;
-    color: #FFFF;
-}
-
-.screen_form_a:hover {
-    color: #054488;
-}
-    </style>
-    
+ 
     <section class="form">
         <!-- <div class="about_nav">
             <nav aria-label="breadcrumb">
@@ -236,31 +27,31 @@ button i {
         <form>
             
             <div class="input-group">
-                <label for="full-name"><i class="fas fa-user"></i> Full Name:</label>
+                <label for="full-name"><i class="fas fa-user"></i>Full Name:</label>
                 <input type="text" id="full-name" name="Full Name" required pattern="[A-Za-z\s]{3,}">
                 <small class="error-message">Please enter a valid full name (at least 3 letters).</small>
             </div>
         
             <div class="input-group">
-                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <label for="email"><i class="fas fa-envelope"></i>Email:</label>
                 <input type="email" id="email" name="Email" required>
                 <small class="error-message">Please enter a valid email address.</small>
             </div>
         
             <div class="input-group">
-                <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+                <label for="phone"><i class="fas fa-phone"></i>Phone Number:</label>
                 <input type="tel" id="phone" name="Phone number" pattern="[0-9]{10,15}">
                 <small class="error-message">Please enter a valid phone number (10 to 15 digits).</small>
             </div>
         
             <div class="input-group">
-                <label for="university-email"><i class="fas fa-university"></i> University Webmail:</label>
+                <label for="university-email"><i class="fas fa-university"></i>University Webmail:</label>
                 <input type="email" id="university-email" name="University Email">
                 <small class="error-message">Please enter a valid university email address.</small>
             </div>
         
             <div class="input-group">
-                <label for="university-id"><i class="fas fa-id-card"></i> University ID:</label>
+                <label for="university-id"><i class="fas fa-id-card"></i>University ID:</label>
                 <input type="text" id="university-id" name="University Id" pattern="[A-Za-z0-9]{5,}">
                 <small class="error-message">Please enter a valid university ID (at least 5 characters).</small>
             </div>
@@ -273,7 +64,7 @@ button i {
     
         
             <div class="input-group">
-                <label for="it-selection"><i class="fas fa-users"></i> Choose your group:</label>
+                <label for="it-selection"><i class="fas fa-users"></i>Choose your group:</label>
                 <select id="it-selection" name="Group number" required>
                     <option value="choice" disabled selected>Choose your group:</option>
                     <option value="group-1">Group 1</option>
@@ -321,7 +112,7 @@ button i {
             </div>
         
             <div class="input-group full-width">
-                <label for="message"><i class="fas fa-comment"></i> Message:</label>
+                <label for="message"><i class="fas fa-comment"></i>Message:</label>
                 <textarea id="message" name="Message" rows="1" required></textarea>
                 <small class="error-message">Please enter a message.</small>
             </div>
