@@ -331,17 +331,27 @@ ul {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 767px) {
+
+@media (min-width: 500px) and (max-width: 767px) {
 
     .screen_2_span {
         margin-top: 50px;
         font-size: 1.5rem;
         /* font-size: clamp(24px, 4vw, 48px); */
+    }
+}
+
+@media (max-width: 500px) {
+
+    .screen_2_span {
+        margin: 20px;
+        margin-top: 50px;
+        font-size: clamp(16px, 4vw, 24px);
     }
 }
 
