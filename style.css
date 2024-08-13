@@ -319,6 +319,10 @@ ul {
 }
 
 .screen_2 h2 {
+    background-color: #0044CC;
+    color: #FFFF;
+    text-align: center;
+    padding: 120px 0;
     font-size: clamp(24px, 4vw, 48px);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
