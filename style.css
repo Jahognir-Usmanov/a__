@@ -870,6 +870,11 @@ nav {
     transform: translateY(0);
 }
 
+.nav-panel h3 {
+    display: flex;
+    justify-content: center;
+}
+
 .hamburger {
     background: none;
     border: none;
