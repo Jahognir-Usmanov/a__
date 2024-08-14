@@ -200,8 +200,8 @@ ul {
     color: #FFFF;
     text-align: center;
     padding: 120px 0;
-    font-size: 54px;
-    /* font-size: clamp(24px, 4vw, 48px); */
+    /* font-size: 54px; */
+    font-size: clamp(24px, 4vw, 48px);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
