@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIUT Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            text-align: center;
+            position: relative;
+            color: #007bff;
+            padding: 100px 20px 50px;
+        }
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .breadcrumb {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        .breadcrumb a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid transparent;
+            border-image: linear-gradient(to right, #007bff, #fcd730) 1;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #007bff;
+            margin: 10px 0;
+        }
+        .card-subtitle {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .card {
+                transform: scale(0.9);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            .container {
+                grid-template-columns: 1fr;/
+            }
+            .card {
+                transform: scale(0.85);
+            }
+            .card-title {
+                font-size: 1.1rem;
+            }
+            .card-subtitle {
+                font-size: 0.9rem;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .card {
+                border-radius: 10px;
+                transform: scale(0.8);
+            }
+            .card-title {
+                font-size: 1rem;
+            }
+            .card-subtitle {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Our team</h1>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; 
+            <span>Our team</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="./photo_2024-08-15 02.58.01.jpeg" alt="President">
+            <div class="card-content">
+                <div class="card-title">SU Education & Welfare Executive</div>
+                <div class="card-subtitle">Ulugbek Usmanov</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
