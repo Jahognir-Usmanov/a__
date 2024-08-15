@@ -637,6 +637,7 @@ nav {
   }
 
   @media (max-width: 776px) {
+
     .card h3 {
         margin-bottom: 15px;
         font-size: 1.1em;
@@ -644,6 +645,7 @@ nav {
   }
 
   @media (max-width: 768px) {
+
     .card h3 {
         flex-wrap: nowrap;
         margin-bottom: 15px;
@@ -652,6 +654,7 @@ nav {
   }
 
   @media (max-width: 330px) {
+
     .card h3 {
         margin-bottom: 15px;
         font-size: 1.2em;
@@ -659,10 +662,12 @@ nav {
   }
 
   @media (max-width: 292px) {
+    
     .card h3 {
         margin-bottom: 15px;
         font-size: 1.1em;
       }
+
   }
 
 
