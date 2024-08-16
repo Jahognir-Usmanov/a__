@@ -48,13 +48,17 @@ header .block_2 nav {
 }
 
 header .block_2 nav a {
-    color: #000;
+    /* color: black; */
     font-size: 20px;
     font-weight: 400;
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
     position: relative;
+}
+
+header .block_2 nav a:hover {
+    color: #5a2ad1;
 }
 
 header .block_2 nav a.active {
@@ -82,6 +86,7 @@ header .block_2 nav a.active::after {
 }
 
 .form-button:hover {
+    color: #FFFF;
     padding: 0px;
 }
 
@@ -349,7 +354,7 @@ nav {
         height: 100vh;
         box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        padding-top: 60px; /* добавляет отступ сверху для первого элемента */
+        padding-top: 60px;
         transition: transform 0.3s ease;
         transform: translateX(100%);
     }
@@ -459,7 +464,6 @@ nav {
     color: #fcd730;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .faq-container {
         width: 95%;

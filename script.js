@@ -1,8 +1,3 @@
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// AOS.init();
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menuToggle');
     const navList = document.getElementById('navList');

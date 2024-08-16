@@ -90,18 +90,15 @@
             color: #333;
             margin-bottom: 10px;
         }
-
-
-     
-        /* Responsive adjustments */
+        
 @media (max-width: 1024px) {
     .container {
-        grid-template-columns: repeat(2, 1fr); /* Два столбца на планшетах */
+        grid-template-columns: repeat(2, 1fr);
     }
     .card {
-        margin: 5px; /* Уменьшение внешнего отступа карточек */
-        padding: 10px; /* Уменьшение внутреннего отступа внутри карточек */
-        transform: scale(0.95); /* Небольшое уменьшение карточек на планшетах */
+        margin: 5px;
+        padding: 10px;
+        transform: scale(0.95);
     }
 }
 
@@ -111,12 +108,12 @@
         font-size: 2.5rem;
     }
     .container {
-        grid-template-columns: 1fr; /* Один столбец на маленьких экранах */
+        grid-template-columns: 1fr;
     }
     .card {
-        margin: -15px; /* Еще большее уменьшение внешнего отступа карточек */
-        padding: 8px; /* Еще большее уменьшение внутреннего отступа */
-        transform: scale(0.9); /* Дополнительное уменьшение карточек на смартфонах */
+        margin: -15px;
+        padding: 8px;
+        transform: scale(0.9);
     }
     .card-title {
         font-size: 1.1rem;
@@ -134,9 +131,9 @@
         font-size: 2rem;
     }
     .card {
-        margin: -15px; /* Минимальные внешние отступы на самых маленьких экранах */
-        padding: 5px; /* Минимальные внутренние отступы */
-        transform: scale(0.85); /* Максимальное уменьшение карточек на маленьких экранах */
+        margin: -15px;
+        padding: 5px;
+        transform: scale(0.85);
     }
     .card-title {
         font-size: 1rem;
