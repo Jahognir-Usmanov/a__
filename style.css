@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #f7f0e8;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -27,16 +27,10 @@ header .block_1 {
     justify-content: center;
     margin-bottom: 20px;
     padding: 20px;
-    color: #fcd730;
-    font-size: 24px;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: #000;
+    font-size: 48px;
     text-align: center;
-}
-
-header .block_1:hover {
-    color: #fcd730;
-    padding: 8px;
-    transition: all 0.5s ease;
+    font-weight: bold;
 }
 
 header .block_2 {
@@ -49,54 +43,91 @@ header .block_2 {
 header .block_2 nav {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 header .block_2 nav a {
-    color: #FFFF;
-    font-size: 18px;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: #000;
+    font-size: 20px;
     font-weight: 400;
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
+    position: relative;
+}
+
+header .block_2 nav a.active {
+    font-weight: bold;
+}
+
+header .block_2 nav a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #5a2ad1;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.form-button {
+    background-color: #5a2ad1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form-button:hover {
+    padding: 0px;
 }
 
 header .block_2 nav a:hover {
-    color: #fcd730;
+    color: #5a2ad1;
     padding: 8px;
     transition: all 0.5s ease;
     text-decoration-line: underline;
 }
 
 @media (max-width: 768px) {
+
     header .block_1 {
-        font-size: 20px;
+        font-size: 36px;
     }
-    
+
     header .block_2 nav a {
-        font-size: 16px;
+        font-size: 18px;
         padding: 8px 16px;
     }
 }
 
 @media (max-width: 480px) {
+
     header {
         padding: 20px;
         margin-bottom: 80px;
     }
 
     header .block_1 {
-        font-size: 18px;
+        font-size: 24px;
     }
-    
+
     header .block_2 nav a {
-        font-size: 14px;
+        font-size: 16px;
         padding: 6px 12px;
     }
 }
 
+@media (min-width: 481px) and (max-width: 500px) {
+
+    h1 {
+        font-size: 68px;
+    }
+
+}
 
 .container {
 	max-width: 1170px;
@@ -279,6 +310,12 @@ nav {
     text-decoration: none;
 }
 
+/* @media (min-width: 581px) {
+    .menu-toggle {
+        
+    }
+} */
+
 @media (min-width: 581px) {
     .screen_1_p {
         display: none;
@@ -290,10 +327,10 @@ nav {
 
 @media (max-width: 581px) {
     .menu-toggle {
-        margin-right: 100px;
+        margin-right: 165px;
         display: block;
         position: absolute;
-        top: 15px;
+        top: 30px;
         right: 15px;
     }
 
@@ -337,13 +374,19 @@ nav {
     
 }
 
-@media (max-width: 325px) {
+@media (max-width: 480px) {
     .menu-toggle {
+        margin-right: 100px;
         display: block;
         position: absolute;
-        margin-right: 70px;
         top: 15px;
         right: 15px;
+    }
+}
+
+@media (max-width: 325px) {
+    .menu-toggle {
+        margin-right: 95px;
     }
 }
 
