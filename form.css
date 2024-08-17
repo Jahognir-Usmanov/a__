@@ -78,8 +78,9 @@ body {
 }
 
 .input-group small.error-message {
-    color: #d9534f;
-    display: none;
+    color: gray;
+    /* color: #d9534f; */
+    /* display: none; */
     font-size: 12px;
     margin-top: 5px;
 }
@@ -121,7 +122,7 @@ button[type="submit"]:hover {
     }
 
     .input-group label {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .input-group input,
@@ -149,7 +150,7 @@ button[type="submit"]:hover {
     }
 
     .input-group label {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .input-group input,
@@ -169,7 +170,7 @@ button[type="submit"]:hover {
     .form {
         padding: 10px;
         margin: 20px auto;
-        width: 95%;
+        width: 90%;
     }
 
     .form h3 {
@@ -177,7 +178,7 @@ button[type="submit"]:hover {
     }
 
     .input-group label {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .input-group input,
