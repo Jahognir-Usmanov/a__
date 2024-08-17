@@ -193,13 +193,13 @@ button[type="submit"]:hover {
     }
 }
 
-#notification {
+/* #notification {
     margin-top: 100px;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #28a745; /* Зеленый цвет для уведомления */
+    background-color: #28a745;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -210,4 +210,4 @@ button[type="submit"]:hover {
 
 .hidden_ {
     display: none;
-}
+} */
