@@ -1,9 +1,11 @@
 body {
-    font-family: 'Arial', sans-serif;
     background-color: rgb(15 23 42);
     margin: 0;
     padding: 0;
     color: #FFFF;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .form {
@@ -212,3 +214,19 @@ button[type="submit"]:hover {
 .hidden_ {
     display: none;
 } */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #004080;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav a {
+    color: #FFFF;
+    text-decoration: none;
+}
