@@ -215,7 +215,7 @@ button[type="submit"]:hover {
     display: none;
 } */
 
-.nav {
+/* .nav {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -229,4 +229,4 @@ button[type="submit"]:hover {
 .nav a {
     color: #FFFF;
     text-decoration: none;
-}
+} */
