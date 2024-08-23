@@ -126,14 +126,40 @@ header .block_2 nav a:hover {
     }
 }
 
-@media (min-width: 481px) and (max-width: 500px) {
+h1 {
+    font-size: 4vw; /* Для адаптивности размера текста */
+    font-weight: bold;
+    text-align: center; /* Центрирование заголовка */
+    margin: 0;
+    padding: 10px 10px;
+
+    /* Адаптивные стили для разных устройств */
+    @media (max-width: 1200px) {
+        font-size: 5vw; /* Для ноутбуков */
+    }
+
+    @media (max-width: 768px) {
+        font-size: 6vw; /* Для планшетов */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 6.4vw; /* Для телефонов */
+    }
+
+    @media (min-width: 1440px) {
+        font-size: 6.5vw; /* Для телефонов */
+    }
+    
+}
+
+/* @media (min-width: 481px) and (max-width: 500px) {
 
     h1 {
         font-size: 68px;
     }
 
-}
-
+} */
+ 
 .container {
 	max-width: 1170px;
 	margin: auto;
@@ -387,12 +413,14 @@ nav {
         top: 15px;
         right: 15px;
     }
+    
 }
 
 @media (max-width: 325px) {
     .menu-toggle {
         margin-right: 95px;
     }
+
 }
 
 .faq-container {
@@ -814,4 +842,11 @@ nav {
     transition: all 0.5s ease;
     text-decoration-line: underline;
   
+}
+
+.screen_2_photo_1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: -100px;
 }
