@@ -241,15 +241,20 @@ ul {
 
 
 @media(max-width: 767px){
+
   .footer_col{
     width: 50%;
     margin-bottom: 30px;
 }
+
 }
+
 @media(max-width: 574px){
+    
   .footer_col{
     width: 100%;
 }
+
 }
 
 .screen_2 {
@@ -554,8 +559,6 @@ nav {
     margin-top: 100px;
    
 }
-
-
 
 .custom-button {
     display: inline-flex;
